@@ -1,8 +1,5 @@
-*.class
-
 .idea
 .gradle
-out/
 /build
 *.iml
 *.ipr
