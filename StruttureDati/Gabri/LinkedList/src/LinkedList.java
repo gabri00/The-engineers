@@ -80,7 +80,7 @@ public class LinkedList {
     }
 
     public void print() {
-        if(!isEmpty()){
+        if (!isEmpty()) {
             System.out.println("\nHead: " + getHead());
             System.out.println("Tail: " + getTail());
 
@@ -88,9 +88,9 @@ public class LinkedList {
             while (n != null) {
                 System.out.println(n.getKey());
                 n = n.getNext();
-            } else 
-                System.out.println("The list is empty");
+            }
         }
+        else System.out.println("The list is empty");
     }
 
     private Node listSearch(final int el) {
