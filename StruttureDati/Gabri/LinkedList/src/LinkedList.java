@@ -80,7 +80,7 @@ public class LinkedList {
     }
 
     public void print() {
-        if(!isEmpty){
+        if(!isEmpty()){
             System.out.println("\nHead: " + getHead());
             System.out.println("Tail: " + getTail());
 
