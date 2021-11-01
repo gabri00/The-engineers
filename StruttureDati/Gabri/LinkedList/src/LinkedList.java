@@ -80,13 +80,16 @@ public class LinkedList {
     }
 
     public void print() {
-        System.out.println("\nHead: " + getHead());
-        System.out.println("Tail: " + getTail());
+        if(!isEmpty){
+            System.out.println("\nHead: " + getHead());
+            System.out.println("Tail: " + getTail());
 
-        Node n = head;
-        while (n != null) {
-            System.out.println(n.getKey());
-            n = n.getNext();
+            Node n = head;
+            while (n != null) {
+                System.out.println(n.getKey());
+                n = n.getNext();
+            } else 
+                System.out.println("The list is empty");
         }
     }
 
