@@ -1,2 +1,8 @@
+
 tasks:
   - init: cd StruttureDati/ && ls
+vscode:
+  extensions:
+    - eamodio.gitlens
+    - redhat.java
+    - ms-ceintl.vscode-language-pack-it
