@@ -1,13 +1,23 @@
 .idea
 .gradle
 /build
+out/
 *.iml
 *.ipr
 *.iws
-
+*.class
 *.log
+del.txt
 
 *.jar
 *.zip
 *.tar.gz
 *.rar
+
+__pycache__
+.venv
+
+.vs/
+.vscode/
+.cache/
+dist/
