@@ -1,6 +1,6 @@
 def merge(arrA, arrB, low, mid, high):
 	if (high + 1 - low >= 0):
-		for i in range(0, len(arrA)):    
+		for i in range(low, high+1):    
 			arrB[i] = arrA[i]
 
 	i = low
@@ -8,17 +8,17 @@ def merge(arrA, arrB, low, mid, high):
 
 	for k in range(low, high+1):
 		if (i > mid):
-			j+=1
 			arrA[k] = arrB[j]
+			j+=1
 		elif (j > high):
-			i+=1
 			arrA[k] = arrB[i]
+			i+=1
 		elif (arrB[j] < arrB[i]):
-			j+=1
 			arrA[k] = arrB[j]
+			j+=1
 		else:
-			i+=1
 			arrA[k] = arrB[i]
+			i+=1
 
 
 def merge_sort_rec(arrA, arrB, low, high):
@@ -32,7 +32,7 @@ def merge_sort_rec(arrA, arrB, low, high):
 
 
 def merge_sort(arrA):
-	arrBuffer = []
+	arrBuffer = [0] * len(arrA)
 	merge_sort_rec(arrA, arrBuffer, 0, len(arrA) - 1)
 
 

@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -9,6 +8,7 @@ public class Main {
             for (int j = i+1; j < array.length; j++) {
                 if (array[j] < array[currMin]) currMin = j;
             }
+            
             swap(array, i, currMin);
         }
     }
