@@ -10,9 +10,10 @@ Repository per progetti universitari e personali.
 >   - [x] Set
 
 > Sorting Algorithms:
->   - [ ] Selection sort
->   - [ ] Merge sort
->   - [ ] Quick sort
+>   - [x] Selection sort
+>   - [x] Merge sort
+>   - [x] Quick sort
+>   - [x] Insertion sort
 
 ## Run in Gitpod
 You can run all projects in Gitpod, a free online dev environment for GitHub:
