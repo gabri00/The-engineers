@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class MergeSort {
     private static void mergeSort(int[] arrA) {
         int[] arrBuffer = new int[arrA.length];
         mergeSortRecursive(arrA, arrBuffer, 0, arrA.length - 1);

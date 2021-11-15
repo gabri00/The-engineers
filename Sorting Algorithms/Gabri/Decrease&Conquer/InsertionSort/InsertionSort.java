@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class InsertionSort {
     private static void insertionSort(int[] arr) {
         for (int i = 1; i < arr.length; i++) {
             int el = arr[i];

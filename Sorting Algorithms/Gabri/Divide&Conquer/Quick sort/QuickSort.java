@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Main {
+public class QuickSort {
     private static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high); // partitioning index

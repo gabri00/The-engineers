@@ -1,14 +1,14 @@
 import java.util.Arrays;
 
-public class Main {
-    private static void SelectionSort(int[] array) {
+public class SelectionSort {
+    private static void selectionSort(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             int currMin = i;
 
             for (int j = i+1; j < array.length; j++) {
                 if (array[j] < array[currMin]) currMin = j;
             }
-            
+
             swap(array, i, currMin);
         }
     }
@@ -23,7 +23,7 @@ public class Main {
         int[] numbers = { 89, 45, 68, 90, 29, 34, 17 };
         System.out.println("Unsorted: " + Arrays.toString(numbers));
 
-        SelectionSort(numbers);
+        selectionSort(numbers);
         System.out.println("Sorted: " + Arrays.toString(numbers));    }
 }
 
