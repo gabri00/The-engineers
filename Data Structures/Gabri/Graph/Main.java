@@ -12,7 +12,9 @@ public class Main {
                     2) Unlink nodes
                     3) check if two nodes are linked
                     4) Print list
-                    5) Quit
+                    5) Graph density
+                    6) Check if connected
+                    7) Quit
                     Option:\t""");
 
             switch (in.nextInt()) {
@@ -42,7 +44,9 @@ public class Main {
                         System.out.printf("(%d, %d) not linked%n", x, y);
                 }
                 case 4 -> graph.print();
-                case 5 -> System.exit(0);
+                case 5 -> System.out.println("Density: " + graph.density());
+                case 6 -> System.out.println("Connected? " + graph.isConnected());
+                case 7 -> System.exit(0);
                 default -> System.out.println("Invalid input");
             }
 
