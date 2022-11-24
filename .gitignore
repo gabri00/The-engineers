@@ -21,7 +21,3 @@ __pycache__
 .vscode/
 .cache/
 dist/
-
-# PROVO AD ELIMINARE QUEUE NICO 
-Data Structures/Nico/Queue/
-.*txt
